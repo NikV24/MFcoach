@@ -1,0 +1,351 @@
+*{
+    margin: 0;
+    padding: 0%;
+    font-family: 'Shantell Sans', cursive;
+    box-sizing: border-box;
+
+}
+
+.header{
+    height: 30vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(slike/background2.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.header h1{
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    opacity: 0.8;
+    text-decoration: underline;
+}
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img{
+    width: 120px;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #00BFFF;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+nav .fa{
+    display: none;
+}
+
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+@media(max-width: 700px){
+
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: #00BFFF;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+    }
+
+    nav .fa{
+        display: block;
+        color: white;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+
+    .nav-links ul{
+        padding: 30px;
+    }
+}
+
+
+
+.pozdrav{
+    display: flex;
+    width: 100%;
+    margin: 10px auto;
+    text-align: center;
+    align-items: center;
+    background: linear-gradient(#00BFFF, rgb(88, 88, 88))
+
+}
+
+
+
+.pozdrav .text{
+    width: 80%;
+    padding: 20px;
+    color: white;
+}
+
+.pozdrav img{
+    width: 300px;
+    padding: 20px;
+    
+    
+}
+
+
+@media(max-width: 700px){
+    .pozdrav{
+        flex-direction: column;
+    }
+
+    .pozdrav .text{
+        width: 99%;
+    }
+
+    .pozdrav img{
+        margin-bottom: 20px;
+        width: 80%;
+    }
+}
+
+.izobrazba{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(88, 88, 88);
+
+}
+
+
+.izobrazba img{
+    width: 400px;
+    padding: 20px;
+    border-radius: 10%;
+}
+
+.izobrazba .text{
+    margin-left: 40px;
+    color: white;
+    width: 60%;
+    align-items: center;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.izobrazba h2{
+    color: white;
+}
+
+.izobrazba p{
+    background: rgb(88, 88, 88);
+    padding: 10px;
+    border-radius: 20px;
+
+}
+
+@media(max-width: 700px){
+    .izobrazba{
+        flex-direction: column;
+    }
+
+    .izobrazba .text{
+        width: 99%;
+        margin: 10px auto;
+    }
+
+    .izobrazba img{
+        width: 99%;
+    }
+}
+
+.izkusnje{
+    display: flex;
+    margin: 10px auto;
+    align-items: center;
+    text-align: left;
+    background: rgb(88, 88, 88);
+
+
+}
+
+.izkusnje .text{
+    padding: 20px;
+    width: 80%;
+    color: white;
+    
+}
+
+.izkusnje h2{
+    text-align: center;
+}
+
+@media(max-width: 700px){
+    .izkusnje{
+        flex-direction: column;
+    }
+
+    .izkusnje .text{
+        width: 100%;
+        text-align: justify;
+    }
+
+    .slideshow-container{
+        margin: auto;
+        margin-bottom: 10px;
+        width: 90%;
+    }
+
+}
+
+.slideshow-container {
+    max-width: 600px;
+    position: relative;
+    margin-right: 20px;
+  }
+
+  .mySlides {
+    display: none;
+  }
+  
+ 
+  .dot {
+    display: none;
+  }
+   
+  .fade {
+    animation-name: fade;
+    animation-duration: 2.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .3}
+    to {opacity: 1}
+  }
+
+
+  .sport{
+    background-color: rgb(88, 88, 88);
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    color: white;
+}
+
+.sport .text{
+    padding-top: 20px;
+    width: 90%;
+    margin: auto;
+}
+
+.sport .row{
+    margin-top: 20px;
+}
+
+
+.sport img{
+    border-radius: 20px;
+    height: 600px;
+    width:auto;
+    margin:20px;
+}
+
+.sport video{
+    height: 600px;
+    border-radius: 20px;
+    margin:20px;
+
+}
+
+
+@media(max-width: 700px){
+    .sport{
+        flex-direction: column;
+    }
+
+    .sport img{
+        width: auto;
+        margin: 10px auto;
+    }
+}
+
+footer{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    background-color: #00BFFF;
+    padding: 20px;
+    font-size: 15px;
+  
+}
+
+footer .links{
+    display: flex;
+    margin: auto;
+}
+
+footer .links ul{
+    display: flex;
+    list-style: none;
+
+}
+
+footer .links a{
+    text-decoration: none;
+    padding: 0px 15px;
+    color: white;
+}
+
+footer .copyright{
+    margin: auto;
+    color: white;
+}
+
+@media(max-width: 700px){
+    footer{
+        display: block;
+        font-size: 10px;
+    }
+
+    footer .links{
+        margin-top: 10px;
+        margin-left: 30px;
+    }
+
+
+}
+    
