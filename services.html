@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+    <html lang="sl">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MF Kineziologija vam ponuja storitve za izboljšanje vašega zdravja. Učinkovita rehabilitacija poškodb, priprave športnikov za boljšo kondicijo in moč,
+     naročite se na skupinsko ali individualno vadbo.">
+    <meta name="keywords" content="MFcoach, Marko Felja, kineziologija, fizioterapija, rehabilitacija poškodb, kondicijski treningi, skupinske vadbe">
+    <title>MFcoach</title>
+    <link rel="stylesheet" href="services.css">
+    <link href="https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <script src="navbar.js" defer></script>
+    <script src="cookies.js" defer></script>
+ 
+
+
+</head>
+<body>
+
+    <section class="header">
+        <nav class="navbar">
+            <a href="index.html"><img src="slike/logo.png"></a>
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+
+            </a>
+            <div class="navbar-links">
+                <ul>
+                    <li><a href="index.html">DOMOV</a></li>
+                    <li><a href="about.html">O MENI</a></li>
+                    <li><a href="services.html">STORITVE</a></li>
+                    <li><a href="contact.html">KONTAKT</a></li>
+                    </ul>
+                </div>  
+            </div>
+        </nav>
+            <h1>Storitve</h1>
+    </section>
+
+    <section class="goals">
+        <div class="row">
+            <div class="col">
+                <h2>Zakaj priporočam svoje storitve?</h2>
+                <ul>
+                    <li>Individualen pristop</li>
+                    <li>Strokovna obravnava</li>
+                    <li>Profesionalen odnos</li>
+                    <li>Prijaznost</li>
+                </ul>
+               
+            </div>
+            <div class="col">
+                <h2>Kakšne cilje lahko pričakujete?</h2>
+                <ul>
+                    <li>Izboljšanje počutja</li>
+                    <li>Zmanjšanje bolečin</li>
+                    <li>Izboljšanje telesne pripravljenosti</li>
+                    <li>Izboljšanje telesne sestave</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="fizio" onclick="location.href='fizio.html';">
+        <div class="tekst">
+        <h1>FIZIOTERAPIJA IN REHABILITACIJA POŠKODB</h1>
+        <p>Pri rehabilitaciji upoštevamo individualnost vsakega posameznika. S testiranji ugotavljamo pomanjkljivosti ter vzroke za bolečine in
+         jih rešujemo s sodobnimi metodami rehabilitacije. Pri tem se ves čas osredotočamo na celotno sliko posameznika in izboljšujemo tudi splošno telesno pripravljenost.</p>
+        </div>
+    </section>
+
+
+
+    <section id="kondicija" onclick="location.href='kondicija.html';">
+        <div class="tekst">
+        <h1>KONDICIJSKA PRIPRAVA ŠPORTNIKOV</h1>
+        <p>Športnike obravnavamo individualno. Programe jim sestavljamo na podlagi testiranj in potreb posameznika.
+        Pri tem upoštevamo zahteve športa in igralnih pozicij ter tako pripomoremo k čim bolj optimalni pripravi.</p>
+        </div>
+
+
+       
+    </section>
+
+    <section class="splosna" onclick="location.href='splosna.html';">
+        <div class="tekst">
+        <h1>VADBA ZA SPLOŠNO POPULACIJO</h1>
+        <p>Pri splošni populaciji se osredotočimo na konkretne cilje posameznika ter s pomočjo testiranj sestavimo programe za dosego teh ciljev.
+        Ob tem smo pozorni tudi na določene omejitve, ki jih s programom skusamo odpraviti in tako zagotoviti zdravje in optimalen napredek.</p>
+        </div>
+
+
+
+    </section>
+
+    <section class="narocila">
+        <h1>ŽELIM SE NAROČITI NA VADBO</h1>
+        <form action="https://formsubmit.co/markofelja05@gmail.com" method="POST">
+
+            <input type="text" name="name" placeholder="Ime in priimek:" required>
+            <input type="email" name="email" placeholder="Elektronska pošta:" required>
+            <input type="textbox" id="phone" placeholder="Telefonska številka:" required>
+            <select name="service" id="service">
+                <option value="terapije" >Terapije - Individualno</option>
+                <option value="terapevtska">Terapevtska vadba - Individualno</option>
+                <option value="kondicijaI">Kondicijska priprava - Individualni trening</option>
+                <option value="kondicijaS">Kondicijska priprava - Mala skupina</option>
+                <option value="splosnaI">Vadba za splošno populacijo - Individualni trening</option>
+                <option value="splosnaM">Vadba za splošno populacijo - Mala skupina</option>
+                <option value="splosnaV">Vadba za splošno populacijo - Velika skupina</option>
+            </select>
+
+            <select name="st_treningov" id="st_treningov">
+            <option value="st">1x /1h</option>
+            <option value="st">5x /1h</option>
+            <option value="st">10x /1h</option>
+        </select>
+
+        <textarea name="message" rows="4" placeholder="Na kratko opišite svoje športne izkušnje, ter pojasnite izbiro paketa." required></textarea>
+
+
+
+            <button type="submit">Oddaj naročilo</button>
+       </form>
+    </section>
+
+    <footer>
+        <div class="copyright">
+            Copyright &copy; Marko Felja 2023 | Izdelava: Nik Vrček
+        </div>
+
+        <div class="links">
+          <ul>
+            <li><a href="index.html">Domov</a></li>
+            <li><a href="about.html">O meni</a></li>
+            <li><a href="services.html">Storitve</a></li>
+            <li><a href="contact.html">Kontakt</a></li>
+
+        </ul>
+        </div>
+    </footer>
+
+
+    <div class="cookies">
+        <header>
+            <i class='bx bx-cookie'></i>
+            <h2>Piškotki</h2>
+        </header>
+    
+        <div class="data">
+            <p>To spletno mesto uporablja piškotke. S piškotki zagotavljamo boljšo uporabniško izkušnjo, enostavnejši pregled vsebin, analizo uporabe, oglasne sisteme in funkcionalnosti.
+             S klikom na »Strinjam se« dovoljuješ vse namene obdelave. <a href="#">Preberi več...</a></p>
+        </div>
+    
+        <div class="buttons">
+            <button class="button" id="acceptBtn">Sprejmi</button>
+            <button class="button" id="decline">Zavrni</button>
+    
+        </div>
+    </div>
+
+
+
+   
+</body>
+</html>

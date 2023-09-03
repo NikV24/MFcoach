@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0%;
+    font-family: 'Shantell Sans', cursive;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #00BFFF;
+}
+
+.header{
+    min-height: 30vh;
+    text-align: center;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(slike/fizio_background.jpg);
+    background-position: center;
+    background-size: cover;
+    color: white;   
+}
+
+.text{
+    background-color: gray;
+    color: white;
+    width: 70%;
+    margin: 20px auto;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.header h1{
+   padding-top: 50px;
+   font-size: 50px;
+}
+
+.cenik h2{
+    text-align: center;
+    padding-top: 20px;
+    font-size: 30px;
+    text-decoration: underline;
+    color: white;
+}
+
+.cenik .row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cenik .row .splosna-col{
+    width: 300px;
+    height: 320px;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),url("slike/splosna1.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 30px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.cenik .row .splosna-col h3{
+    margin-top: 10px;
+    text-decoration: underline;
+}
+
+.cenik .row .splosna-col p{
+    margin: 30px auto;
+    font-size: large;
+    font-weight: bolder;
+}
+
+.cenik .row .splosna-col .cena{
+    font-size: 30px;
+}
+
+.cenik .row .splosna-col .individual{
+    text-decoration: underline;
+    font-weight: bolder;
+}
+
+.cenik .row .splosna-col:hover{
+    box-shadow: 0 0 20px 0px gray;
+}
+
+@media(max-width: 700px){
+ 
+
+    .cenik .row{
+        flex-direction: column;
+    }
+
+    .text{
+        width: 90%;
+    }
+
+    .header h1{
+        font-size: 30px;
+    }
+
+}
+
+
+
+
+
+.button{
+    width: 50%;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+
+}
+
+.fizio-btn{
+    text-decoration: none;
+    color: white;
+    font-size: 50px;
+}
+
+.fizio-btn:hover{
+    color: gray;
+}

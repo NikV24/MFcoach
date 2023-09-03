@@ -1,0 +1,567 @@
+*{
+    margin: 0;
+    padding: 0%;
+    font-family: 'Shantell Sans', cursive;
+    box-sizing: border-box;
+
+}
+
+.header{
+    height: 30vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(slike/background2.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.header h1{
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    opacity: 0.8;
+    text-decoration: underline;
+}
+
+.navbar{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar img{
+    width: 120px;
+}
+
+
+
+.navbar-links ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-links li{
+    font-size: 20px;
+    list-style: none;
+    padding: 8px 12px;
+
+}
+
+.navbar-links li a{
+    text-decoration: none;
+    color: white;
+}
+
+.navbar-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #00BFFF;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.navbar-links ul li:hover::after{
+    width: 100%;
+}
+
+.toggle-button{
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+@media (max-width: 600px){
+    .toggle-button{
+        display: flex;
+    }
+
+    .navbar-links{
+        display: none;
+        width: 100%;
+    }
+
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-links ul{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar-links li{
+        text-align: center
+    }
+
+    .navbar-links li a{
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active{
+        display: flex;
+    }
+
+    .text-box h1{
+        font-size: 20px;
+    }
+}
+
+
+
+.pozdrav{
+    display: flex;
+    width: 99%;
+    margin: 10px auto;
+    text-align: center;
+    align-items: center;
+    background: linear-gradient(#00BFFF, rgb(88, 88, 88))
+
+}
+
+
+
+.pozdrav .text{
+    width: 80%;
+    padding: 20px;
+    color: white;
+}
+
+.pozdrav img{
+    width: 300px;
+    padding: 20px;
+    
+    
+}
+
+
+@media(max-width: 700px){
+    .pozdrav{
+        flex-direction: column;
+    }
+
+    .pozdrav .text{
+        width: 99%;
+    }
+
+    .pozdrav img{
+        margin-bottom: 20px;
+        width: 80%;
+    }
+}
+
+.izobrazba{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(88, 88, 88);
+    width: 99%;
+    margin: auto;
+
+}
+
+
+.izobrazba img{
+    width: 400px;
+    padding: 20px;
+    border-radius: 10%;
+}
+
+.izobrazba .text{
+    margin-left: 40px;
+    color: white;
+    width: 60%;
+    align-items: center;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.izobrazba h2{
+    color: white;
+}
+
+.izobrazba p{
+    background: rgb(88, 88, 88);
+    padding: 10px;
+    border-radius: 20px;
+
+}
+
+@media(max-width: 700px){
+    .izobrazba{
+        flex-direction: column;
+    }
+
+    .izobrazba .text{
+        width: 99%;
+        margin: 10px auto;
+    }
+
+    .izobrazba img{
+        width: 99%;
+    }
+}
+
+.izkusnje{
+    width: 99%;
+    display: flex;
+    margin: 10px auto;
+    align-items: center;
+    text-align: left;
+    background: #00BFFF
+
+
+}
+
+.izkusnje .text{
+    padding: 20px;
+    width: 80%;
+    color: white;
+    
+}
+
+.izkusnje h2{
+    text-align: center;
+}
+
+@media(max-width: 700px){
+    .izkusnje{
+        flex-direction: column;
+    }
+
+    .izkusnje .text{
+        width: 100%;
+        text-align: justify;
+    }
+
+    .slideshow-container{
+        margin: auto;
+        margin-bottom: 10px;
+        width: 90%;
+    }
+
+}
+
+.slideshow-container {
+    max-width: 600px;
+    padding: 20px;
+  }
+
+  .mySlides {
+    display: none;
+  }
+  
+ 
+  .dot {
+    display: none;
+  }
+   
+  .fade {
+    animation-name: fade;
+    animation-duration: 5.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .3}
+    to {opacity: 1}
+  }
+
+
+  .sport{
+    background-color: rgb(88, 88, 88);
+    width: 99%;
+    margin: auto;
+    text-align: center;
+    color: white;
+}
+
+.sport .text{
+    padding-top: 20px;
+    width: 90%;
+    margin: auto;
+}
+
+.sport .row{
+    margin-top: 20px;
+}
+
+
+.sport img{
+    border-radius: 20px;
+    height: 600px;
+    width:auto;
+    margin:20px;
+}
+
+.sport video{
+    height: 600px;
+    border-radius: 20px;
+    margin:20px;
+
+}
+
+
+@media(max-width: 700px){
+    .sport{
+        flex-direction: column;
+    }
+
+    .sport img{
+        width: 90%;
+        height: auto;
+        margin: 10px auto;
+    }
+
+    .sport video{
+        width: 90%;
+    }
+}
+
+
+
+.kontakt{
+    width: 99%;
+    margin: 10px auto;
+    padding: 20px;
+    background-color: rgb(88, 88, 88);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.kontakt h1{
+    color: white;
+}
+
+.kontakt p{
+    color: white;
+}
+
+.social{
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.icon{
+    width: 70px;
+    height: 70px;
+    border-radius: 100px;
+    background-color: white;
+    margin: 20px;
+    text-align: center;
+    font-size: 50px;
+    line-height: 70px;
+    overflow: hidden;
+    transition: all .3s ease-out;
+}
+
+.icon:hover{
+    width: 400px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+}
+
+.icon:hover i{
+    color: white;
+}
+
+.icon .fa-square-facebook{
+    color: #00BFFF;
+}
+.fb:hover{
+    background: #00BFFF;
+}
+
+.icon .fa-instagram{
+    color: #00BFFF;
+}
+.insta:hover{
+    background: #00BFFF;
+}
+
+.icon .fa-phone-volume{
+    color: green;
+}
+.ph:hover{
+    background: green;
+}
+
+@media(max-width: 700px){
+    .social{
+        flex-direction: column;
+    }
+}
+
+
+form{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 4vw;
+    width: 50%;
+    border-radius: 10px;
+    margin: 50px auto;
+}
+
+form h3{
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+form input, form textarea{
+    border: 0;
+    margin: 10px 0;
+    padding: 20px;
+    outline: none;
+    background-color: #9cd9ee;
+    font-size: 16px;
+}
+
+form button{
+    padding: 15px;
+    background: #9cd9ee;
+    color: black;
+    font-size: 18px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    width: 20%;
+    margin: 20px auto 0;
+    border-radius: 30px;
+}
+
+@media(max-width: 700px){
+    form{
+        width: 99%;
+    }
+}
+
+footer{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    background-color: #00BFFF;
+    padding: 20px;
+    font-size: 15px;
+    margin-top: 10px;
+  
+}
+
+footer .links{
+    display: flex;
+    margin: auto;
+}
+
+footer .links ul{
+    display: flex;
+    list-style: none;
+
+}
+
+footer .links a{
+    text-decoration: none;
+    padding: 0px 15px;
+    color: white;
+}
+
+footer .copyright{
+    margin: auto;
+    color: white;
+}
+
+@media(max-width: 700px){
+    footer{
+        display: block;
+        font-size: 10px;
+    }
+
+    footer .links{
+        margin-top: 10px;
+        margin-left: 30px;
+    }
+
+}
+
+.cookies{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    max-width: 345px;
+    width: 100%;
+    background: rgb(202, 186, 186);
+    opacity: 70%;
+    border-radius: 8px;
+    padding: 15px 25px 22px;
+    transition: right 0.3s ease;
+}
+
+.cookies .show{
+    right: 20px;
+}
+
+.cookies header{
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+}
+
+header i{
+    font-size: 32px;
+}
+
+header h2{
+    font-weight: 500;
+}
+
+.cookies .data p{
+    font-size: 16px;
+}
+
+.data p a{
+    text-decoration: none;
+}
+
+.wrapper .buttons{
+    margin: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.buttons .button{
+    width: calc(100% / 2 - 10px);
+    padding: 8px 0;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.buttons .button:hover{
+    background-color: antiquewhite;
+}
+    

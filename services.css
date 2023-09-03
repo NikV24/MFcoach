@@ -1,0 +1,535 @@
+*{
+    margin: 0;
+    padding: 0%;
+    font-family: 'Shantell Sans', cursive;
+    box-sizing: border-box;
+
+}
+
+.header{
+    height: 30vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(slike/background2.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.header h1{
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    opacity: 0.8;
+    text-decoration: underline;
+}
+
+.navbar{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar img{
+    width: 120px;
+}
+
+
+
+.navbar-links ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-links li{
+    font-size: 20px;
+    list-style: none;
+    padding: 8px 12px;
+
+}
+
+.navbar-links li a{
+    text-decoration: none;
+    color: white;
+}
+
+.navbar-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #00BFFF;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.navbar-links ul li:hover::after{
+    width: 100%;
+}
+
+.toggle-button{
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+@media (max-width: 600px){
+    .toggle-button{
+        display: flex;
+    }
+
+    .navbar-links{
+        display: none;
+        width: 100%;
+    }
+
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-links ul{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar-links li{
+        text-align: center
+    }
+
+    .navbar-links li a{
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active{
+        display: flex;
+    }
+
+    .text-box h1{
+        font-size: 20px;
+    }
+}
+
+
+.goals{
+    width: 99%;
+    margin: 10px auto;
+    background: linear-gradient(#00BFFF, rgb(88, 88, 88));
+}
+
+.goals .row{
+    display: flex;
+    height: auto;
+    padding: 50px;
+    
+}
+
+.goals .row .col{
+    width: 40%;
+    margin: auto;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.goals .row h2{
+    text-align: center;
+    margin-top: 20px;
+    text-decoration: underline;
+}
+
+.goals .row ul{
+    list-style: square;
+    padding: 10px;
+    margin-left: 20px;
+}
+
+.goals .row ul li{
+    margin: 30px;
+}
+
+@media(max-width: 700px){
+    .goals .row{
+        flex-direction: column;
+        
+    }
+
+    .goals .row .col{
+        width: 100%;
+        margin: 10px;
+    }
+
+}
+
+.fizio{
+    background-color: rgb(88, 88, 88);
+    width: 99%;
+    margin: auto;
+}
+
+.fizio h1{
+    padding-top: 20px;
+    font-size: 50px;
+}
+
+
+.fizio .tekst{
+    margin-top: 10px;
+
+    min-height: 50vh;
+   text-align: center;
+   background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(slike/fizio_background.jpg);
+   background-position: center;
+   background-size: cover;
+   color: white;
+   font-size: 25px;   
+}
+
+.fizio .tekst p{
+    width: 50%;
+    text-align: center;
+    align-items: center;
+    margin: 100px auto;
+}
+
+
+
+
+
+
+.fizio:hover{
+    border: 10px solid #00BFFF;
+    -webkit-transform: scale(1.0);
+    transform: scale(1.0);
+    -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+    transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+}
+
+
+
+@media(max-width: 700px){
+    .fizio h1{
+        width: 99%;
+        font-size: 25px;
+        
+    }
+
+    .fizio .tekst{
+        width: 99%;
+        font-size: 15px;
+        
+    }
+
+    .fizio .tekst p{
+        min-width: 99%;
+        margin: 20px auto;
+    }
+
+ 
+}
+
+#kondicija{
+    background-color: #00BFFF;
+    width: 99%;
+    margin: auto;
+}
+
+#kondicija h1{
+    padding-top: 20px;
+    font-size: 50px;
+}
+
+
+#kondicija .tekst{
+    margin-top: 10px;
+    min-height: 50vh;
+   text-align: center;
+   background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(slike/kondicija_background.jpg);
+   background-position: center;
+   background-size: cover;
+   color: white;
+   font-size: 25px;   
+}
+
+#kondicija .tekst p{
+    width: 50%;
+    text-align: center;
+    align-items: center;
+    margin: 50px auto;
+    
+}
+
+
+
+#kondicija h2{
+    text-align: center;
+    margin-top: 30px;
+
+}
+
+#kondicija:hover{
+border: 10px solid #00BFFF;
+-webkit-transform: scale(1.0);
+transform: scale(1.0);
+-webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+}
+
+@media(max-width: 700px){
+    #kondicija h1{
+        width: 99%;
+        font-size: 25px;
+    }
+
+    #kondicija .tekst{
+        width: 99%;
+        font-size: 15px;
+        
+    }
+
+    #kondicija .tekst p{
+        min-width: 99%;
+        margin: 20px auto;
+    }
+}
+
+
+
+
+.splosna{
+    background-color: rgb(88, 88, 88);
+    width: 99%;
+    margin: auto;
+}
+
+.splosna h1{
+    padding-top: 20px;
+    font-size: 50px;
+}
+
+
+.splosna .tekst{
+    margin-top: 10px;
+    min-height: 50vh;
+   text-align: center;
+   background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(slike/splosna_background.jpg);
+   background-position: center;
+   background-size: cover;
+   color: white;
+   font-size: 25px;   
+}
+
+.splosna .tekst p{
+    width: 50%;
+    text-align: center;
+    align-items: center;
+    margin: 50px auto;
+    
+}
+
+
+.splosna:hover{
+    border: 10px solid #00BFFF;
+    -webkit-transform: scale(1.0);
+    transform: scale(1.0);
+    -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+    transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+}
+
+
+
+@media(max-width: 700px){
+    .splosna h1{
+        width: 99%;
+        font-size: 25px;
+    }
+
+    .splosna .tekst{
+        width: 99%;
+        font-size: 15px;
+        
+    }
+
+    .splosna .tekst p{
+        min-width: 99%;
+        margin: 20px auto;
+    }
+
+   
+
+}
+
+
+.narocila{
+    width: 99%;
+    margin: 10px auto;
+    padding: 20px;
+    background-color: rgb(88, 88, 88);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    color: white;
+    margin-top: 10px;
+}
+
+form{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 4vw;
+    width: 50%;
+    border-radius: 10px;
+    margin: 50px auto;
+}
+
+form input, form textarea, form select{
+    border: 0;
+    margin: 10px 0;
+    padding: 20px;
+    outline: none;
+    background-color: #9cd9ee;
+    font-size: 16px;
+}
+
+form button{
+    padding: 15px;
+    background: #9cd9ee;
+    color: black;
+    font-size: 18px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    width: 20%;
+    margin: 20px auto 0;
+    border-radius: 30px;
+}
+
+@media(max-width: 700px){
+    form{
+        width: 99%;
+    }
+}
+
+
+footer{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    background-color: #00BFFF;
+    padding: 20px;
+    font-size: 15px;
+    margin: 10px 0 0 0 ;
+  
+}
+
+footer .links{
+    display: flex;
+    margin: auto;
+}
+
+footer .links ul{
+    display: flex;
+    list-style: none;
+
+}
+
+footer .links a{
+    text-decoration: none;
+    padding: 0px 15px;
+    color: white;
+}
+
+footer .copyright{
+    margin: auto;
+    color: white;
+}
+
+@media(max-width: 700px){
+    footer{
+        display: block;
+        font-size: 10px;
+    }
+
+    footer .links{
+        margin-top: 10px;
+        margin-left: 30px;
+    }
+}
+
+
+.cookies{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    max-width: 345px;
+    width: 100%;
+    background: rgb(202, 186, 186);
+    opacity: 70%;
+    border-radius: 8px;
+    padding: 15px 25px 22px;
+    transition: right 0.3s ease;
+}
+
+.cookies .show{
+    right: 20px;
+}
+
+.cookies header{
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+}
+
+header i{
+    font-size: 32px;
+}
+
+header h2{
+    font-weight: 500;
+}
+
+.cookies .data p{
+    font-size: 16px;
+}
+
+.data p a{
+    text-decoration: none;
+}
+
+.wrapper .buttons{
+    margin: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.buttons .button{
+    width: calc(100% / 2 - 10px);
+    padding: 8px 0;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.buttons .button:hover{
+    background-color: antiquewhite;
+}
+

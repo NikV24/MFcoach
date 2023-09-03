@@ -1,0 +1,294 @@
+*{
+    margin: 0;
+    padding: 0%;
+    font-family: 'Shantell Sans', cursive;
+}
+
+
+*{
+    margin: 0;
+    padding: 0%;
+    font-family: 'Shantell Sans', cursive;
+}
+
+.header{
+    height: 30vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(slike/background2.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.header h1{
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    opacity: 0.8;
+    text-decoration: underline;
+}
+
+.navbar{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar img{
+    width: 120px;
+}
+
+
+
+.navbar-links ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-links li{
+    font-size: 20px;
+    list-style: none;
+    padding: 8px 12px;
+
+}
+
+.navbar-links li a{
+    text-decoration: none;
+    color: white;
+}
+
+.navbar-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #00BFFF;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.navbar-links ul li:hover::after{
+    width: 100%;
+}
+
+.toggle-button{
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+@media (max-width: 600px){
+    .toggle-button{
+        display: flex;
+    }
+
+    .navbar-links{
+        display: none;
+        width: 100%;
+    }
+
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-links ul{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar-links li{
+        text-align: center
+    }
+
+    .navbar-links li a{
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active{
+        display: flex;
+    }
+
+    .text-box h1{
+        font-size: 20px;
+    }
+}
+
+
+form{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 4vw;
+    width: 70%;
+    max-width: 400px;
+    border-radius: 10px;
+    margin: 50px auto;
+}
+
+form h3{
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+form input, form textarea{
+    border: 0;
+    margin: 10px 0;
+    padding: 20px;
+    outline: none;
+    background-color: #9cd9ee;
+    font-size: 16px;
+}
+
+form button{
+    padding: 15px;
+    background: #9cd9ee;
+    color: black;
+    font-size: 18px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    width: 20%;
+    margin: 20px auto 0;
+    border-radius: 30px;
+}
+
+
+.contact{
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(#00BFFF, rgb(88, 88, 88))
+}
+
+.contact .content{
+    max-width: 800px;
+    text-align: center;
+}
+
+.contact .content p{
+    font-weight: 300;
+    color: white;
+}
+
+.container{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.container .info{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container .info .box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+
+.container .info .box .icon{
+    min-width: 60px;
+    height: 60px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+
+.container .info .box .text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: white;
+    flex-direction: column;
+    font-weight: 300;
+}
+
+.container .info .box .text h3{
+    font-weight: 500;
+}
+
+@media(max-width: 700px){
+    .contact{
+        padding: 50px;
+    }
+
+    .container{
+        flex-direction: column;
+    }
+
+    .container .info{
+        width: 100%;
+    }
+}
+
+
+footer{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    background-color: #00BFFF;
+    padding: 20px;
+    font-size: 15px;
+    margin-top: 10px;
+  
+}
+
+footer .links{
+    display: flex;
+    margin: auto;
+}
+
+footer .links ul{
+    display: flex;
+    list-style: none;
+
+}
+
+footer .links a{
+    text-decoration: none;
+    padding: 0px 15px;
+    color: white;
+}
+
+footer .copyright{
+    margin: auto;
+    color: white;
+}
+
+@media(max-width: 700px){
+    footer{
+        display: block;
+        font-size: 10px;
+    }
+
+    footer .links{
+        margin-top: 10px;
+        margin-left: 30px;
+    }
+}
